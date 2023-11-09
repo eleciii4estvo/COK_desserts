@@ -1,0 +1,151 @@
+@import url('normalize.css');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #003f97;
+}
+
+header h1{
+    color:#bfddff;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+header img{
+    padding: 10px;
+}
+
+.logo_vtppp{
+    height: 90px;
+}
+
+.logo_cok{
+    height: 80px;
+}
+
+aside img{
+    width: 100px;
+    height: 880px;
+}
+
+main{
+    max-width: 100%;
+    max-height: 100%;
+    background: #bfddff;
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_button{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    height: 70px;
+    width: 350px;
+    color:#fff;
+    background: #1677ff;
+    border: none;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: 200ms;
+}
+
+.info_button:hover{
+    transform: scale(1.1);
+    background: #237eff;
+}
+
+.info_without_popup{
+    color:#fff;
+    background: #1677ff;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_without_popup h2{
+    font-weight: 400;
+}
+
+.cards{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card_item{
+    width:350px;
+    background: #a1c8ff;
+    color:#fff;
+    text-align: center;
+    padding: 15px;
+    border: 5px solid #74aeff;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.card_item h2{
+    font-weight: 300;
+}
+
+.card_item img{
+    border-radius: 15px;
+}
+
+.card_item a{
+    color: #1677ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+
+.card_item a:hover{
+    color:#ff3b3b;
+}
+
+.card_item button{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    height: 40px;
+    width: 250px;
+    color:#fff;
+    background: #1677ff;
+    border: none;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: 200ms;
+    align-self: center;
+}
+
+.card_item button:hover{
+    transform: scale(1.1);
+    background: #237eff;
+}
