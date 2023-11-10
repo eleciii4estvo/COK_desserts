@@ -180,6 +180,10 @@ main{
     align-items: flex-start;
 }
 
+.modal_box h3{
+    margin: 0;
+}
+
 .modal.open{
     visibility: visible;
     opacity: 1;
