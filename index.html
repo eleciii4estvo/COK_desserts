@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
     <title>Главная</title>
 </head>
 <body>
@@ -19,6 +20,19 @@
         <img class="logo_cok" src="src/icon.png" alt="logo_cok">
     </header>
     <main>
+        <div id="modal_about_content" class="modal">
+            <div class="modal_box">
+                <button id="close_modal_btn">
+                    <img src="src/close.png" alt="close_icon">
+                </button>
+                <h2>Модальное окно</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laboriosam consequatur hic pariatur, ipsa, debitis distinctio enim ut reiciendis officiis unde perferendis quidem sit? Facilis impedit odio corporis enim voluptatum, ipsam harum, provident maiores et nihil doloremque omnis ducimus reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laboriosam consequatur hic pariatur, ipsa, debitis distinctio enim ut reiciendis officiis unde perferendis quidem sit? Facilis impedit odio corporis enim voluptatum, ipsam harum, provident maiores et nihil doloremque omnis ducimus reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laboriosam consequatur hic pariatur, ipsa, debitis distinctio enim ut reiciendis officiis unde perferendis quidem sit? Facilis impedit odio corporis enim voluptatum, ipsam harum, provident maiores et nihil doloremque omnis ducimus reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laboriosam consequatur hic pariatur, ipsa, debitis distinctio enim ut reiciendis officiis unde perferendis quidem sit? Facilis impedit odio corporis enim voluptatum, ipsam harum, provident maiores et nihil doloremque omnis ducimus reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laboriosam consequatur hic pariatur, ipsa, debitis distinctio enim ut reiciendis officiis unde perferendis quidem sit? Facilis impedit odio corporis enim voluptatum, ipsam harum, provident maiores et nihil doloremque omnis ducimus reprehenderit!</p>
+            </div>
+        </div>
         <aside>
             <img src="src/leftBar.png" alt="side_bar">
         </aside>
@@ -28,9 +42,10 @@
                 <h2>ГБПОУ ВО "ВТППП"</h2>
             </div>
             <div class="info">
-                <button class="info_button">Информация о контенте</button>
+                <button id="info_about_content_btn" class="info_button">Информация о контенте</button>
                 <button class="info_button">Ключевые слова</button>
             </div>
+            
             <div class="cards">
                 <div class="card_item">
                     <img src="src/Introduction.jpg" alt="intro">
