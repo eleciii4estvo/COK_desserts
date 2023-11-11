@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="template.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -64,6 +65,36 @@
                 <p><b>Моро́женое </b>— пищевой продукт-десерт, представляющий собой замороженную в процессе непрерывного взбивания массу, содержащую в основе своей питательные, вкусовые, ароматические и эмульгирующие вещества.</p>
             </div>
         </div>
+        <div id="modal_about_first_block_popup" class="modal">
+            <div class="modal_box">
+                <button id="close_modal_btn">
+                    <img id="close_modal_img" src="src/close.png" alt="close_icon">
+                </button>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque ut excepturi suscipit dolores omnis ratione eum provident alias, eligendi unde quia repellat numquam magnam, deserunt commodi rerum autem consequatur neque! Sit, consequatur amet sunt ipsa expedita culpa tempore vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque ut excepturi suscipit dolores omnis ratione eum provident alias, eligendi unde quia repellat numquam magnam, deserunt commodi rerum autem consequatur neque! Sit, consequatur amet sunt ipsa expedita culpa tempore vero.</p>
+               </div>
+        </div>
+        <div id="modal_about_second_block_popup" class="modal">
+            <div class="modal_box">
+                <button id="close_modal_btn">
+                    <img id="close_modal_img" src="src/close.png" alt="close_icon">
+                </button>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque ut excepturi suscipit dolores omnis ratione eum provident alias, eligendi unde quia repellat numquam magnam, deserunt commodi rerum autem consequatur neque! Sit, consequatur amet sunt ipsa expedita culpa tempore vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque ut excepturi suscipit dolores omnis ratione eum provident alias, eligendi unde quia repellat numquam magnam, deserunt commodi rerum autem consequatur neque! Sit, consequatur amet sunt ipsa expedita culpa tempore vero.</p>
+               </div>
+        </div>
+        <div id="modal_about_third_block_popup" class="modal">
+            <div class="modal_box">
+                <button id="close_modal_btn">
+                    <img id="close_modal_img" src="src/close.png" alt="close_icon">
+                </button>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque ut excepturi suscipit dolores omnis ratione eum provident alias, eligendi unde quia repellat numquam magnam, deserunt commodi rerum autem consequatur neque! Sit, consequatur amet sunt ipsa expedita culpa tempore vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque ut excepturi suscipit dolores omnis ratione eum provident alias, eligendi unde quia repellat numquam magnam, deserunt commodi rerum autem consequatur neque! Sit, consequatur amet sunt ipsa expedita culpa tempore vero.</p>
+               </div>
+        </div>
         <aside>
             <img src="src/leftBar.png" alt="side_bar">
         </aside>
@@ -81,20 +112,20 @@
                 <div class="card_item">
                     <img src="src/Introduction.jpg" alt="intro">
                     <h2>Вхождение в тему и создание условий для осознанного восприятия нового материала</h2>
-                    <a href="#">Подробнее</a>
-                    <button>Пройти</button>
+                    <a class="more_inf" id="modal_about_first_block">Подробнее</a>
+                    <button><a class="redirect_btn" href="first_block.html">Пройти</a></button>
                 </div>
                 <div class="card_item">
                     <img src="src/mastering.jpg" alt="intro">
                     <h2>Освоение нового материала</h2><br><br><br>
-                    <a href="#">Подробнее</a>
-                    <button>Пройти</button>
+                    <a class="more_inf" id="modal_about_second_block">Подробнее</a>
+                    <button><a class="redirect_btn" href="#">Пройти</a></button>
                 </div>
                 <div class="card_item">
                     <img src="src/application.jpg" alt="intro">
                     <h2>Применение изученного материала</h2><br><br>
-                    <a href="#">Подробнее</a>
-                    <button>Пройти</button>
+                    <a class="more_inf" id="modal_about_third_block">Подробнее</a>
+                    <button><a class="redirect_btn" href="#">Пройти</a></button>
                 </div>
             </div>
         </div>

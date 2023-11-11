@@ -1,4 +1,5 @@
 let currentOpenModal = null;
+
 addEventListener("click", event => {
     if (event.target.id) {
         const targetId = event.target.id;
@@ -18,7 +19,5 @@ addEventListener("click", event => {
                 }
             }
         }
-    } else {
-        console.log("Элемент не имеет атрибута id");
     }
 });
