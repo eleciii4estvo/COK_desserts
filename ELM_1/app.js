@@ -8,6 +8,15 @@ modals_id = [
   'modal_about_yeast_dough',
   'modal_about_biscuit_dough',
   'modal_about_sandy_dough',
+  'modal_about_choux_dough',
+  'modal_about_waffle_dough',
+  'modal_about_puff_pastry',
+  'modal_about_pancake_batter',
+  'modal_about_mousse_desserts',
+  'modal_about_fruit_and_berry_fillings',
+  'modal_about_cream_and_chocolate_fillings',
+  'modal_about_ice_cream_and_sorbets',
+  'modal_about_decorating_desserts_with_isomalt_elements',
   'close_modal_img'
 ];
 
