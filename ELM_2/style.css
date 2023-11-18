@@ -66,6 +66,13 @@ main{
     transition: 500ms;
 }
 
+.row_with_title{
+    display: flex;
+    justify-content: center;
+    background: #c8e4cc;
+    color: #49874e;
+    text-align: center;
+}
 
 .modal_box h3{
     margin: 0;
@@ -95,125 +102,86 @@ main{
     transform: rotate(180deg);
 }
 
-
-.info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info_button{
-    font-size: 20px;
-    text-align: center;
-    margin: 30px;
-    height: 70px;
-    width: 350px;
-    color:#fff;
+.back_btn{
+    margin: 40px;
+    width: 200px;
+    height: 50px;
     background: #c8e4cc;
+    color: #fff;
     border: none;
-    font-weight: 500;
+    text-align: center;
     border-radius: 25px;
     transition: 200ms;
 }
 
-.info_button:hover{
+.back_btn:hover{
     transform: scale(1.1);
     background: #b8e1be;
 }
 
-.info_without_popup{
-    color:#49874e;
-    background: #c8e4cc;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.back_btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-.info_without_popup h2{
+.video_and_quiz{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.frame{
+    width: 640px;
+    height: 360px;
+    background: #49874e;
+    margin: 10px 50px;
+}
+
+.quiz_wrppaper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+#answer_buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+#question_name{
+    color:#49874e;  
     font-weight: 400;
 }
 
-.cards{
-    padding: 0 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.card_item{
-    width:350px;
+.ans_btn{
     background: #c8e4cc;
-    color:#49874e;
-    text-align: center;
-    padding: 15px;
-    border: 5px solid #49874e;
-    border-radius:15px;
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    border: 2px solid #49874e;
+    border-radius: 4px;
+    transition: 300ms;
 }
 
-.card_item h2{
-    font-weight: 300;
+.ans_btn:hover{
+    background: rgb(179, 227, 175);
 }
 
-.card_item img{
-    border-radius: 15px;
-    height: auto;
-}
-
-.card_item a{
-    font-size: 20px;
-    margin-bottom: 20px;
-    transition: 200ms;
-    cursor: pointer;
-}
-
-.more_inf{
-    color: #49874e;
-    text-decoration:underline;
-}
-
-.more_inf:hover{
-    color:#ff3b3b;
-}
-
-.card_item button{
-    font-size: 20px;
-    text-align: center;
-    margin: 20px;
-    height: 40px;
-    width: 250px;
-    color:#fff;
-    background: #93b398;
-    border: none;
+#next_button{
+    background: #49874e;
+    padding: 10px 20px;
+    margin-top: 15px;
     font-weight: 500;
-    border-radius: 25px;
-    transition: 200ms;
-    align-self: center;
-}
-
-.modal_box{
-    max-width: 500px;
-    padding: 45px;
-    margin: 30px 15px;
-    z-index: 1;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.card_item button:hover{
-    transform: scale(1.1);
-    background: #97d2a0;
-}
-
-.redirect_btn{
-    text-decoration: none;
     color: #fff;
+    border: 3px solid #9bc698;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+#next_button:hover{
+    transform: scale(1.1);
 }
