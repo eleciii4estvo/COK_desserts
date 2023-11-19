@@ -36,6 +36,8 @@ footer img{
 
 main{
     max-width: 100%;
+    min-height: 90vh;
+    height: auto;
     max-height: 100%;
     background: #9bc698;
     display: flex;
@@ -127,9 +129,9 @@ main{
 }
 
 .video_and_quiz{
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -143,8 +145,11 @@ main{
 }
 
 .quiz_wrppaper{
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 50px;
 }
 
@@ -159,6 +164,10 @@ main{
 }
 
 .ans_btn{
+    min-width: 600px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
     background: #c8e4cc;
     padding: 5px 10px;
     margin: 5px 0px;
@@ -167,8 +176,15 @@ main{
     transition: 300ms;
 }
 
-.ans_btn:hover{
+.ans_btn:hover:not([disabled]){
     background: rgb(179, 227, 175);
+    color:#000;
+}
+
+.ans_btn:disabled{
+    color: #000;
+    cursor: no-drop;
+
 }
 
 #next_button{
@@ -184,4 +200,12 @@ main{
 
 #next_button:hover{
     transform: scale(1.1);
+}
+
+.correct{
+    background: #16da6b;
+}
+
+.incorrect{
+    background: #ff9393;
 }
