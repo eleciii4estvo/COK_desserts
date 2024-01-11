@@ -44,6 +44,49 @@ const questions = [
             {text: '15%', correct: false}
         ]
     },
+    {
+        question: "Как могут изготавливаться декоративные элементы из изомальта?" ,
+        answers:[
+            {text: 'Только вручную', correct: false},
+            {text: 'Только при помощи силиконовых молдов', correct: false},
+            {text: 'Произвольно вручную или при помощи молдов', correct: true}
+        ]
+    },
+    {
+        question: "Что такое конфи?" ,
+        answers:[
+            {text: 'Вид фруктовой или ягодной желейной начинки с наличием в нем кусочков фруктов или ягод', correct: false},
+            {text: 'Это соус на основе ягодного или фруктового пюре с небольшим количеством сахара и желирующих агентов', correct: false},
+            {text: 'Это желейная желейная прослойка на основе ягод или фруктов, сахара (специй, алкоголя) и желирующего компонента', correct: true}
+        ]
+    },
+    {
+        question: "Какие три ингредиента составляют основу песочного теста?" ,
+        answers:[
+            {text: 'Масло, сахар и мука', correct: true},
+            {text: 'Масло, яйца и мука', correct: false},
+            {text: 'Молоко, сахар и мука', correct: false},
+            {text: 'Молоко, яйца и мука', correct: false}
+        ]
+    },
+    {
+        question: "Для чего применяют технологию пакотизации?" ,
+        answers:[
+            {text: 'Для перемешивания продуктов', correct: false},
+            {text: 'Для получения гомогенных структур из замороженных продуктов', correct: true},
+            {text: 'Для взбивания кремов', correct: false}
+        ]
+    },
+    {
+        question: "Какие блюда и/или полуфабрикаты можно приготовить при помощи Pacojet 2+?" ,
+        answers:[
+            {text: 'Молотые специи, кофе', correct: false},
+            {text: 'Овощную, мясную, рыбную нарезки', correct: false},
+            {text: 'Горячие соусы', correct: false},
+            {text: 'Мороженое, сорбеты, фарши, пюре', correct: true}
+        ]
+    },
+    
 ]
 
 const questionElement =  document.querySelector("#question_name");
@@ -65,7 +108,7 @@ function showQuestion(){
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + "." + currentQuestion.question;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
